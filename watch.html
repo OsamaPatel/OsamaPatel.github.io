@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="watch.css">
+    <title>FitBit-19</title>
+</head>
+
+<body onload="startTime()">
+    <main>
+        <section class="watch">
+            <img id="red" class="active" src="https://i.imgur.com/PTgQlim.png" alt="">
+            <img id="black" class="disable" src="https://i.imgur.com/iOeUBV7.png" alt="">
+            <img id="blue" class="disable" src="https://i.imgur.com/Mplj1YR.png" alt="">
+            <img id="pink" class="disable" src="https://i.imgur.com/Zygu7I3.png" alt="">
+            <img id="purple" class="disable" src="https://i.imgur.com/xSIK4M8.png" alt="">
+            <div id="txt" class="active"></div>
+            <div id="heart" class="disable">
+                <img src="heart.png" alt="">
+                <p>78</p>
+            </div>
+        </section>
+        <section class="controls">
+            <div class="title">
+                <h1>FitBit-19 Smart watch</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, deleniti.</p>
+            </div>
+            <div class="color">
+                <p>Colors:</p>
+                <button class="blue"></button>
+                <button class="black"></button>
+                <button class="pink"></button>
+                <button class="purple"></button>
+            </div>
+            <div class="features">
+                <p>Features:</p>
+                <button id="time">Time</button>
+                <button id="heartRate">Heart Rate</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="watch.js"></script>
+</body>
+
+</html>

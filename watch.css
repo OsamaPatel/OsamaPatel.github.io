@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+main {
+  display: flex;
+}
+.watch img {
+  position: relative;
+  width: 30rem;
+}
+.active {
+  display: block;
+}
+.disable {
+  display: none;
+}
+.blue {
+  padding: 1rem 2rem;
+  background-color: blue;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+}
+.black {
+  padding: 1rem 2rem;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+}
+.pink {
+  padding: 1rem 2rem;
+  background-color: pink;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+}
+.purple {
+  padding: 1rem 2rem;
+  background-color: purple;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+}
+.red {
+  padding: 1rem 2rem;
+  background-color: red;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+}
+#txt {
+  color: white;
+  position: absolute;
+  top: 200px;
+  left: 190px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+#heart {
+  color: white;
+  position: absolute;
+  top: 200px;
+  left: 190px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+#heart img {
+  width: 5.5rem;
+  animation-name: heartbeat;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+#heart p {
+  position: absolute;
+  top: 50px;
+  left: -11px;
+  padding-left: 2.3rem;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
