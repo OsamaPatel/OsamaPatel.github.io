@@ -15,6 +15,9 @@ main {
 .disable {
   display: none;
 }
+.color button {
+  margin: 0.1rem 0.2rem;
+}
 .blue {
   padding: 1rem 2rem;
   background-color: blue;
@@ -79,11 +82,37 @@ main {
   left: -11px;
   padding-left: 2.3rem;
 }
+.features button {
+  padding: 0.5rem 1rem;
+  font-size: large;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+}
+#time {
+  background-color: darkcyan;
+}
+#heartRate {
+  background-color: rgba(201, 12, 12, 0.671);
+}
 @keyframes heartbeat {
   0% {
     transform: scale(1);
   }
   100% {
     transform: scale(1.5);
+  }
+}
+@media screen and (max-width: 900px) {
+  main {
+    display: block;
+    text-align: center;
+  }
+  .controls {
+    padding-left: 10rem;
+  }
+  .color button {
+    margin: 0.3rem 1rem;
   }
 }
