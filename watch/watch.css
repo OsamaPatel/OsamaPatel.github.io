@@ -104,7 +104,7 @@ main {
     transform: scale(1.5);
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
   main {
     display: block;
     text-align: center;
