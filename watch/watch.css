@@ -57,7 +57,7 @@ main {
   color: white;
   position: absolute;
   top: 200px;
-  left: 190px;
+  left: 180px;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -117,5 +117,8 @@ footer {
   }
   .color button {
     margin: 0.3rem 1rem;
+  }
+  #txt {
+    left: 175px;
   }
 }
