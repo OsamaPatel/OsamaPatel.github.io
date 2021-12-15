@@ -96,6 +96,9 @@ main {
 #heartRate {
   background-color: rgba(201, 12, 12, 0.671);
 }
+footer {
+  text-align: center;
+}
 @keyframes heartbeat {
   0% {
     transform: scale(1);
