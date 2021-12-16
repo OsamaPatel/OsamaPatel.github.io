@@ -6,6 +6,9 @@ body {
 h1 {
   color: #ece6d9;
 }
+span {
+  color: white;
+}
 .list {
   display: flex;
   flex-direction: column;
