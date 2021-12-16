@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>SmartWatch in React</title>
+</head>
+
+<body onload="startTime()">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <main>
+    <section class="watch">
+      <img id="red" class="active" src="https://i.imgur.com/PTgQlim.png" alt="">
+      <img id="black" class="disable" src="https://i.imgur.com/iOeUBV7.png" alt="">
+      <img id="blue" class="disable" src="https://i.imgur.com/Mplj1YR.png" alt="">
+      <img id="pink" class="disable" src="https://i.imgur.com/Zygu7I3.png" alt="">
+      <img id="purple" class="disable" src="https://i.imgur.com/xSIK4M8.png" alt="">
+      <div id="txt" class="active"></div>
+      <div id="heart" class="disable">
+        <img src="heart.png" alt="">
+        <p>78</p>
+      </div>
+    </section>
+    <section class="controls">
+      <div class="title">
+        <h1>FitBit-19 Smart watch</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, deleniti.</p>
+      </div>
+      <div class="color">
+        <p>Colors:</p>
+        <button class="blue"></button>
+        <button class="black"></button>
+        <button class="pink"></button>
+        <button class="purple"></button>
+      </div>
+      <div class="features">
+        <p>Features:</p>
+        <button id="time">Time</button>
+        <button id="heartRate">Heart Rate</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>made by Osama Patel</p>
+  </footer>
+  <script>
+    var blue = document.querySelector('.blue');
+    var black = document.querySelector('.black');
+    var pink = document.querySelector('.pink');
+    var purple = document.querySelector('.purple');
+    var red = document.querySelector('.red')
+
+    var redWatch = document.querySelector('#red')
+    var blueWatch = document.querySelector('#blue')
+    var blackWatch = document.querySelector('#black')
+    var pinkWatch = document.querySelector('#pink')
+    var purWatch = document.querySelector('#purple')
+    var redWatch = document.querySelector('#red')
+
+    blue.addEventListener('click', () => {
+      if (blueWatch.classList.contains('active')) {
+        blueWatch.classList.remove('active')
+        blueWatch.classList.add('disable')
+        redWatch.classList.add('active')
+        redWatch.classList.remove('disable')
+      }
+      else {
+        redWatch.classList.add('disable');
+        redWatch.classList.remove('active');
+        blueWatch.classList.add('active');
+        blueWatch.classList.remove('disable');
+        blackWatch.classList.add('disable');
+        blackWatch.classList.remove('active');
+        pinkWatch.classList.add('disable');
+        pinkWatch.classList.remove('active');
+        purWatch.classList.add('disable');
+        purWatch.classList.remove('active');
+      }
+    })
+    black.addEventListener('click', () => {
+      if (blackWatch.classList.contains('active')) {
+        blackWatch.classList.remove('active')
+        blackWatch.classList.add('disable')
+        redWatch.classList.add('active')
+        redWatch.classList.remove('disable')
+      }
+      else {
+        redWatch.classList.add('disable');
+        redWatch.classList.remove('active');
+        blueWatch.classList.add('disable');
+        blueWatch.classList.remove('active');
+        blackWatch.classList.add('active');
+        blackWatch.classList.remove('disable');
+        pinkWatch.classList.add('disable');
+        pinkWatch.classList.remove('active');
+        purWatch.classList.add('disable');
+        purWatch.classList.remove('active');
+      }
+    })
+    pink.addEventListener('click', () => {
+      if (pinkWatch.classList.contains('active')) {
+        pinkWatch.classList.remove('active')
+        pinkWatch.classList.add('disable')
+        redWatch.classList.add('active')
+        redWatch.classList.remove('disable')
+      }
+      else {
+        redWatch.classList.add('disable');
+        redWatch.classList.remove('active');
+        blueWatch.classList.add('disable');
+        blueWatch.classList.remove('active');
+        blackWatch.classList.add('disable');
+        blackWatch.classList.remove('active');
+        pinkWatch.classList.add('active');
+        pinkWatch.classList.remove('disable');
+        purWatch.classList.add('disable');
+        purWatch.classList.remove('active');
+      }
+    })
+    purple.addEventListener('click', () => {
+      if (purWatch.classList.contains('active')) {
+        purWatch.classList.remove('active')
+        purWatch.classList.add('disable')
+        redWatch.classList.add('active')
+        redWatch.classList.remove('disable')
+      }
+      else {
+        redWatch.classList.add('disable');
+        redWatch.classList.remove('active');
+        blueWatch.classList.add('disable');
+        blueWatch.classList.remove('active');
+        blackWatch.classList.add('disable');
+        blackWatch.classList.remove('active');
+        pinkWatch.classList.add('disable');
+        pinkWatch.classList.remove('active');
+        purWatch.classList.add('active');
+        purWatch.classList.remove('disable');
+      }
+    })
+
+    var time = document.getElementById('time');
+    var heartRate = document.getElementById('heartRate');
+    var timer = document.getElementById('txt');
+    var heart = document.getElementById('heart');
+
+    time.addEventListener('click', function () {
+      timer.classList.remove('disable');
+      timer.classList.add('active');
+      heart.classList.remove('active');
+      heart.classList.add('disable');
+    });
+    heartRate.addEventListener('click', function () {
+      timer.classList.add('disable');
+      timer.classList.remove('active');
+      heart.classList.add('active');
+      heart.classList.remove('disable');
+    });
+
+
+
+    // timer
+
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+      if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+
+</body>
+
+</html>
