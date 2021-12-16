@@ -26,6 +26,14 @@ span {
   text-align: left;
   padding-left: 1.3rem;
 }
+ul li button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+li button i {
+  padding-left: 19rem;
+}
 .input input {
   border: none;
   outline: none;
