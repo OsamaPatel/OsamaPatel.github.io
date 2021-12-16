@@ -14,12 +14,17 @@ work.addEventListener("keyup", function(enter){
 });
 
 function todo(){
-    var no = list.childElementCount + 1;
-    var li = document.createElement('li');
-    li.appendChild(document.createTextNode(work.value));
-    li.id = document.getElementById("item " + no);
-    list.appendChild(li);
-    work.value = '';
-    task.innerHTML = no;
+    if(work.value === ''){
+        alert('enter something!!!');
+    }
+    else{
+        var no = list.childElementCount + 1;
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode(work.value));
+        li.id = document.getElementById("item " + no);
+        list.appendChild(li);
+        work.value = '';
+        task.innerHTML = no;
+    }
 }
 
