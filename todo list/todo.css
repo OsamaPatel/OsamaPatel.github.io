@@ -54,3 +54,13 @@ li button i {
   background-color: white;
   color: black;
 }
+@media screen and (max-width: 400px) {
+  #todolist li {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #todolist li {
+    width: 22rem;
+  }
+}
