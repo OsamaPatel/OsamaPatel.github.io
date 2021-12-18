@@ -2,7 +2,6 @@ var lis = document.getElementById('list-1');
 var btn = document.getElementById('btn');
 var list = document.getElementById('todolist');
 var work = document.getElementById('work');
-var task = document.getElementById('task');
 
 
 btn.addEventListener('click', todo);
@@ -47,6 +46,8 @@ function todo(){
 //             div.style.display = "none";
 //           }
 //     }
+
+
 var li = document.createElement("li");
 var inputValue = document.getElementById("work").value;
 var t = document.createTextNode(inputValue);
